@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+    <h1>The BookSky</h1>
+    </div>
+    
+    <div class="container">
+        <div class="book">
+            <h2> Treasure Island </h2>
+            <h4> Robert Louis Stevenson </h4>
+            <p> While going through the possessions of a deceased guest who owed them money, the mistress of the inn and her son find a treasure map that leads to a pirate fortune as well as great danger</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>  
+
+    <div class="popup"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+        <input type="text" placeholder="Book Title" id="title">
+        <input type="text" placeholder="Book Author" id="author">
+        <textarea type="text" placeholder="Short Description"  id="description"></textarea>
+        <button id="update">ADD</button>
+        <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+
+    <button id="add">+</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
